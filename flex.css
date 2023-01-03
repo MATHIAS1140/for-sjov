@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body, html, .wrapper{
+    height: 1200px;
+}
+
+.wrapper {
+    display: flex;
+    /* gap virker kun med flex aktiveret */
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 150px;
+}
+
+
+/* betyder at den tager alle direkte childs inde i wrapperen */
+.wrapper > *{
+    width: 300px;
+    height: 300px;
+    
+}
+.flex1 {
+    background-color: antiquewhite;
+    /* width: 300px;
+    height: 300px; */
+}
+
+.flex2 {
+    background-color: rgb(214, 147, 60);
+    /* width: 300px;
+    height: 300px; */
+
+}
+
+.flex3 {
+    background-color: rgb(215, 250, 215);
+    /* width: 300px;
+    height: 300px; */
+
+}
+
+.wrapper2{
+    position: relative;
+
+}
+
+header{
+    display: flex;
+    padding-left: 50px;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    top: 10;
+    width: 100%;
+    background-color: gray;
+}
+
+nav{
+    height: 50px;
+    position: fixed;
+    background-color: aquamarine;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+header > img{
+    width: 100px;
+    height: 50px;
+}
